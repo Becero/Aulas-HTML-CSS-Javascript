@@ -16,6 +16,34 @@
             <label for="arquivo">Arquivo</label>
             <input type="file" name="arquivo" id="arquivo">
         </p>
+        <p>
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+        </p>
+        <p>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </p>
+        <!-- <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </p> -->
+
+        <p>
+            <button type="submit" onclick="mensagem()">Clique A</button>
+        </p>
+        <p>
+            <input type="image" src="../img/5f5b537d3dfa9f353b4a6bf488532b47-enviar-botao-laranja.png">
+        </p>
+        <p>
+            <input type="text" name="" id="">
+        </p>
     </form>
+    <script>
+        function mensagem(){
+            var usuario = document.getElementById("usuario").value;
+            alert(usuario)
+        }
+    </script>
 </body>
 </html>
