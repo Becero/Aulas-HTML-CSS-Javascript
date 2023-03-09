@@ -8,12 +8,24 @@ body{
 
 h1{
     font-weight: bold;
-    font-variant: small-caps;   
-
+    font-variant: small-caps;
 }
 
 p{
-    font-style: italic;
+    /*font-style: italic;
     line-height: 30px;
+    margin: 50;
+    direction: rtl;
+    text-align: center;
+    text-decoration: underline;*/
+    text-indent: 50px;
+    /* letter-spacing: 10px; */
+    word-spacing: 20px;
 }
+
+a{
+    text-decoration: none;
+}
+
+
 
