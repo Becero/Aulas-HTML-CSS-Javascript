@@ -1,0 +1,66 @@
+p{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p[title]{
+    color: aqua;
+}
+
+.texto{
+    color: blue;
+}
+
+.menu a{
+   
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.menu a:hover{
+
+    color: blueviolet;
+}
+#menu2 a:active{
+    color: red;
+}
+
+/* #menu2 a:visited{
+    color:darkgoldenrod;
+} */
+
+#menu2 a:link{
+    color: blanchedalmond;
+}
+
+#menu2 a{
+    color: violet;
+}
+
+#menu2 a:hover{
+
+
+}
+
+input{
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid red;
+}
+
+.texto2 p::first-letter{
+    color: brown;
+
+}
+
+/* div#menu2::before{
+    content: "Test";
+} */
+
+div.texto2 p{
+    background-color: yellow;
+}
