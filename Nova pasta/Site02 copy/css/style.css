@@ -10,9 +10,10 @@ body{
     background-color: #ccc;
 }
 #tudo{
-    width: 960px;
+    width: 80%;
     margin: 0 auto;
     background-color: #fff;
+    border-radius: 5px;
 }
 h1,h2{
     color: #036;
@@ -21,6 +22,7 @@ h1,h2{
 header{
     background-color: #036;
     padding: 5px 20px;
+    border-radius: 5px;
 
 }
 header h1,header h2{
@@ -37,13 +39,12 @@ p{
 }
 
 .auxiliar{
-    width: 215px;
+    width: 20%;
     float: left;
-    background:  url();
 }
 
 .principal{
-    width: 745px;
+    width: 80%;
     float: right;
     padding: 15px;
 }
@@ -54,17 +55,18 @@ footer{
     background-color: #036;
     color: #fff;
     padding: 10px 0;
+    border-radius: 5px;
 }
 
 a{
     text-decoration: none;
     color: #fff;
-
 }
 
 nav{
     text-align: center;
     padding-left: 10px;
+   
 }
 nav a{
     background-color: #ff6e19;
@@ -73,6 +75,7 @@ nav a{
     display: block;
     line-height: 2;
     text-transform: capitalize;
+    border-radius: 10px;
 }
 nav a:hover{
     background-color: #036;
@@ -83,13 +86,27 @@ ul{
 }
 
 img{
-    width: 150px;
+    width: 90%;
     border-radius: 5%;
     margin: 10px auto;
     display: block;
 }
 
 img:hover{
-    width: 100%;
+     width: auto ;
     height: 100%;
+}
+
+@media(max-width: 750px) {
+    .auxiliar{
+        width: 90%;
+        float: left;
+    }
+    
+    .principal{
+        width: 100%;       
+        padding: 15px;
+        float: left;
+    }
+    
 }
