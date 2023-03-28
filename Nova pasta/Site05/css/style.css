@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+header{
+    background-color: goldenrod;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 1.5em;
+    color: #fff
+}
+
+main{
+    margin: 1.5% 0;
+}
+
+.conteudo-principal{
+    float: left;
+    width: 60%;
+}
+
+aside{
+    float: right;
+    width: 40%;
+    background: #f0f0f0;
+    padding: 1%;
+}
+
+.artigo-principal{
+    margin: 4.2% 0;
+}
+.artigo-principal p{
+    padding: 10px;
+}
+p{
+    margin: 1% 0;
+    text-align: justify;
+}
+
+.artigo-ultimo-conteudo{
+    float: left;
+    width: 47.5%;
+    margin:2.5%  2.5% 2.5% 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    background-color: #f9f9f9;
+    float: left;
+    width: 40%;
+    margin: 4%;
+    text-align: center;
+    outline: 1px solid #dedede;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: 7%;
+}
+
+footer{
+    background-color: goldenrod;
+    clear: both;
+    font-size: 1em;
+    color: #fff;
+    padding: 1.5% 0;
+    text-align:center ;
+}
+
+@media screen and(max-width:700px) {
+    .artigo-principal{
+         float: none;
+         width: auto;
+     }
+     .artigo-ultimo-conteudo{
+         float: none;
+         width: auto;
+     }
+     aside{
+         float: none;
+         width: auto;
+     }
+}
+@media screen and(max-width:400px) {
+    nav ul li a{
+        float: none;
+        width: auto;
+    }
+    
+}
+
+
+
