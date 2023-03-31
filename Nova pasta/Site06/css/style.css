@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url("../img/waiting-room-with-monitors.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    opacity: 0.9;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    font-size: 20px;
+}
+
+nav ul li, nav .cadastro{
+    padding: 20px;
+}
+
+.cadastro button{
+    padding: 5px 20px;
+    background-color: crimson;
+    border: 1px solid crimson;
+    border-radius: 20px;
+    color: white;
+}
+
+.cadastro button:hover{
+    background-color: red;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.conteudo-sobre{
+    padding: 100px 20px;
+}
+
+.conteudo-sobre h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+.conteudo-sobre p{
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}

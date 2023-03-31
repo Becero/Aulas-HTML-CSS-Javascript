@@ -6,10 +6,10 @@
     padding: 0;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 2%;
+img, iframe{
+    max-width: 100%;   
+    border-radius: 1%;
+    margin: 0 auto;
 }
 
 body{
@@ -44,7 +44,7 @@ main{
 }
 
 aside{
-    float: right;
+    float:right;
     width: 40%;
     background: #f0f0f0;
     padding: 1%;
@@ -93,9 +93,16 @@ footer{
     padding: 1.5% 0;
     text-align:center ;
 }
+@media screen and (max-width:400px) {
+    nav li {
+        float: none;
+        width: auto;
+    }
+    
+}
 
-@media screen and(max-width:700px) {
-    .artigo-principal{
+@media screen and (max-width:700px) {
+    .conteudo-principal{
          float: none;
          width: auto;
      }
@@ -108,13 +115,7 @@ footer{
          width: auto;
      }
 }
-@media screen and(max-width:400px) {
-    nav ul li a{
-        float: none;
-        width: auto;
-    }
-    
-}
+
 
 
 
