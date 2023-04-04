@@ -57,11 +57,11 @@ nav ul li, nav .cadastro{
     cursor: pointer;
 }
 
-.conteudo-sobre{
-    padding: 100px 20px;
+.conteudo-sobre, .conteudo-servicos, .conteudo-footer{
+    padding: 50px 20px;
 }
 
-.conteudo-sobre h1{
+.conteudo-sobre h1,.servicos h1{
     font-size: 32px;
     text-align: center;
 }
@@ -71,3 +71,108 @@ nav ul li, nav .cadastro{
     text-align: justify;
     margin-top: 20px;
 }
+.card{
+    background-color: #c8c9cd;
+    width: 300px;  
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px #1e1e1e;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;    
+}
+.card img{
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: 20px 0;
+}
+.card p{
+    text-align: center;
+    padding: 0 10px;
+    color: rgb(46,46, 46);
+
+}
+.card button{
+    background-color:rgb(46,46, 46) ;
+    color: #fff;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+.card button:hover{
+    background-color: #1e1e1e;
+}
+
+.btn{
+    padding: 20px;
+}
+.servicos{
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+footer{
+    background-color:rgb(46,46, 46) ;
+}
+
+.conteudo-footer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+footer .conteudo1{
+    width:40%;
+    padding: 0 40px;
+}
+
+footer .conteudo2{
+    width:20%;
+}
+
+footer .conteudo3{
+    width:40%;
+    padding: 0 40px;
+}
+.redes-sociais{
+    display: flex;
+    justify-content: space-around;
+}
+footer .redes-sociais i{
+   font-size: 32px;
+   text-align: center;
+   color: #fff;
+}
+footer .conteudo2 h2{
+    text-align: center;
+    margin-bottom: 20px ;
+}
+
+
+
+
+/* @media screen and (max-width:500px) {
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    
+    }
+    .card{
+        width: auto;
+        margin-bottom: 20px;
+    }
+} */
+
