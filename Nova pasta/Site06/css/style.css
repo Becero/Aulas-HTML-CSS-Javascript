@@ -43,6 +43,10 @@ nav ul li, nav .cadastro{
     padding: 20px;
 }
 
+.cad{
+    display: none;
+}
+
 .cadastro button{
     padding: 5px 20px;
     background-color: crimson;
@@ -139,19 +143,22 @@ footer{
     display: flex;
     justify-content: space-around;
     color: #fff;
+    flex-wrap: wrap;
 }
 
 footer .conteudo1{
-    width:40%;
+    width:400px;
     padding: 0 40px;
+    margin-bottom: 30px;
 }
 
 footer .conteudo2{
-    width:20%;
+    width:300px;
+    margin-bottom: 30px;
 }
 
 footer .conteudo3{
-    width:40%;
+    width: 400px;
     padding: 0 40px;
 }
 .redes-sociais{
@@ -187,16 +194,17 @@ footer .conteudo2 h2{
 }
 
 
-/* @media screen and (max-width:500px) {
-    .cards{
-        display: flex;
-        justify-content: space-around;
+@media screen and (max-width:700px) {
+    .cad{
+        display: block;
+    }
+    nav ul{
         flex-direction: column;
-    
     }
-    .card{
-        width: auto;
-        margin-bottom: 20px;
+    .cadastro button{
+        display:none;
     }
-} */
-
+    nav{
+        position: static
+    }
+}
