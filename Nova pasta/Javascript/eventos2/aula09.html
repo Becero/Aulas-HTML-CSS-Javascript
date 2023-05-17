@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="Item">Digite seu texto:</label>
+            <input type="text" name="item" id="item">
+        </p>
+        <button type="button" id="btnAdd">Adicionar</button>
+        <button type="button" id="btnRemove">Remover</button>
+
+    </form>
+    <ul id="minhaLista">
+        <li></li>
+    </ul>
+    <script>
+        
+        var btnAdd = document.getElementById("btnAdd");
+        var btnRemove = document.getElementById("btnRemove");
+        var lista = document.getElementById("minhaLista");
+        
+        btnAdd.addEventListener('click', function(){
+            var lista = document.getElementById("minhaLista");
+            var texto = document.getElementById("item").value;
+            var novoItem = document.createElement("li");
+            var novoTexto = document.createTextNode(texto);
+
+            lista.appendChild(novoItem);
+            novoItem.appendChild(novoTexto);
+            
+            document.getElementById('item').value ="";
+        });
+
+        
+        
+        btnRemove.addEventListener('click', function(){
+            var item = document.getElementsByTagName('li');
+            var qdtItens = document.getElementsByTagName('li').ler;
+
+            lista.removeChild(item(qdtItens-1));
+
+        });
+
+    </script>
+</body>
+</html>

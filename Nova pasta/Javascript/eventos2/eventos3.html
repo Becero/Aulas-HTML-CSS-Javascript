@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aprovado{
+            color: blue;
+        }
+        .reprovado{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="">Nota 1</label>
+            <input type="text" name="n1" id="n1">    
+        </p>
+        <p>
+            <label for="">Nota 2</label>
+            <input type="text" name="n2" id="n2">    
+        </p>
+        <p>
+            <label for="">Media:</label>
+            <input type="text" name="media" id="media" readonly>    
+        </p>
+
+        <p>
+            <label for="">Situação:</label>
+            <label id="situação">    </label>
+        </p>
+        <button type="button" id="btnCalcular">Calcular</button>
+    </form>
+    <script>
+        var btnCalcular = document.getElementById('btnCalcular');
+
+        btnCalcular.addEventListener('click', function(){
+            var n1 = document.getElementById('n1').value;
+            var n2 = document.getElementById('n2').value;
+
+            var media = (parseFloat(n1)+parseFloat(n2)) / 2;
+
+            document.getElementById('media').value = media;
+
+            if(media >= 6){
+                document.getElementById('situação').innerHTML = "Aprovado";
+                document.getElementById('situação').classList.add('aprovado');
+                document.getElementById('situação').classList.remove('reprovado');
+
+            }else{
+                document.getElementById('situação').innerHTML = "Reprovado";
+                document.getElementById('situação').classList.add('reprovado');
+                document.getElementById('situação').classList.remove('aprovado');
+            }
+        });
+    </script>
+</body>
+</html>
