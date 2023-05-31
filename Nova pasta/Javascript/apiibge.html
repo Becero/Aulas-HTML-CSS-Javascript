@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fazerGet(url){
+            var request = new XMLHttpRequest();
+            request.open("GET", url, false);
+            request.send();
+            return request.responseText;
+
+        }
+        function main(){
+            // var uf = prompt("Insere seu estado ai:")
+            var  dados = fazerGet("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome");
+
+           var estados = JSON.parse(dados);
+
+           console.log(estados);
+
+           estados.forEach(element => {
+             document.write(element.nome + "<br>");
+           });
+        }
+
+        main();
+
+    </script>
+</body>
+</html>
